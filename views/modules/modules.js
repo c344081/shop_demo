@@ -11,6 +11,9 @@ var handle = {
                 item.selected = i == e.detail.current ? true : false;
             }
             this.setData(this.data)
+        },
+        modulesAddCart: function(e) {
+            console.log(e)
         }
     }
 }

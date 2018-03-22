@@ -22,6 +22,8 @@
 .base-style .icon.bar.mine { background-position: -300rpx 0; }
 .base-style .icon.bar.mine.current { background-position: -300rpx -100rpx; }
 
+.base-style .icon.add-cart { background-position: -300rpx -300rpx; }
+
 /**轮播图*/
 .slider {
     height: 300rpx;

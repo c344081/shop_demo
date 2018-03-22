@@ -31,12 +31,53 @@
     </view>
 </template>
 
+<!--商品列表-->
 <template name="module-1">
-    module-1
+    <view class='module-1 flex-col'>
+        <view class='item-wrapper col' wx:for="{{data}}">
+            <view class='item'>
+                <navigator url='{{item.link}}'>
+                    <image class='image' src='{{item.img}}'></image>
+                    <text class='title'>{{item.title}}</text>
+                    <view class='price'>
+                        <view class='last'>¥{{item.originPrice}}<view></view></view>
+                        <view class='current'>¥{{item.price}}</view>
+                    </view>
+                    <view class='icon add-cart' catchtap='modulesAddCart' data-sku-id='{{item.skuId}}' data-store-id='{{item.storeId}}'></view>
+                </navigator>
+            </view>
+        </view>
+    </view>
 </template>
 
+<!--左右混合模板  -->
 <template name="module-2">
-    module-2
+    <view class='module-2 flex-col'>
+        <view class='col'>
+            <navigator url='{{data[0].link}}'>
+                <image src='{{data[0].img}}'></image>
+            </navigator>
+        </view>
+        <view class='col'>
+            <view class='row'>
+                <navigator url='{{data[1].link}}'>
+                    <image src='{{data[1].img}}'></image>
+                </navigator>
+            </view>
+            <view class='row flex-col'>
+                <view class='col'>
+                    <navigator url='{{data[2].link}}'>
+                        <image src='{{data[2].img}}'></image>
+                    </navigator>
+                </view>
+                <view class='col'>
+                    <navigator url='{{data[3].link}}'>
+                        <image src='{{data[3].img}}'></image>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
 </template>
 
 
