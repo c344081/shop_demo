@@ -1,0 +1,4 @@
+<!--views/cart/cart.wxml-->
+<template name="cart">
+    购物车
+</template>

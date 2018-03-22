@@ -1,1 +1,23 @@
+.base-style .icon {
+    background-image: url(https://static.dmall.com/kayak-project/kayak-lib/dist/kayak-lib/globalstyle/sprt.png);
+    background-repeat: no-repeat;
+    background-size: 800rpx auto;
+    width: 60rpx;
+    height: 60rpx;
+    display: inline-block;
+}
 
+.base-style .icon.bar {
+    background-image: url(http://static.dmall.com/kayak-project/wxdmall/dist/wxdmall/common/image/btm-bar-sprt.png);
+    background-size: 500rpx auto;
+}
+
+/**图标*/
+.base-style .icon.bar.home { background-position: 0 0; }
+.base-style .icon.bar.home.current { background-position: 0 -100rpx; }
+.base-style .icon.bar.sort { background-position: -100rpx 0; }
+.base-style .icon.bar.sort.current { background-position: -100rpx -100rpx; }
+.base-style .icon.bar.cart { background-position: -200rpx 0; }
+.base-style .icon.bar.cart.current { background-position: -200rpx -100rpx; }
+.base-style .icon.bar.mine { background-position: -300rpx 0; }
+.base-style .icon.bar.mine.current { background-position: -300rpx -100rpx; }

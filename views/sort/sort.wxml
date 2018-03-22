@@ -1,0 +1,4 @@
+<!--views/sort/sort.wxml-->
+<template name="sort">
+    分类
+</template>

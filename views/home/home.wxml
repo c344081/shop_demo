@@ -1,0 +1,6 @@
+<!--views/home/home.wxml-->
+<import src="../modules/modules.wxml"/>
+
+<template name="home">
+    <template is="test" data="{{name}}"></template>
+</template>

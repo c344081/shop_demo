@@ -1,0 +1,4 @@
+<!--views/mine/mine.wxml-->
+<template name="mine">
+    我的
+</template>

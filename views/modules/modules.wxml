@@ -1,0 +1,5 @@
+<!--views/modules/modules.wxml-->
+
+<template name="test">
+    测试{{name}}
+</template>

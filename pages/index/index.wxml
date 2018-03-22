@@ -1,2 +1,19 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+
+<!--templates-->
+<import src='../../views/home/home'/>
+<import src='../../views/sort/sort'/>
+<import src='../../views/cart/cart'/>
+<import src='../../views/mine/mine'/>
+
+
+<view class='base-style content'>
+    <template is="{{ currentView }}" data="{{ ...currentData }}"></template>
+</view>
+
+<view class='base-style toolbar'>
+    <view wx:for="{{ tabs }}" bindtap='changeTab' data-view="{{ item.view }}" class="tab {{ item.view == currentView ? 'current' : '' }}">
+        <view class="icon bar {{ item.className }} {{ item.view == currentView ? 'current' : '' }}"></view>
+        {{item.text}}
+    </view>
+</view>
