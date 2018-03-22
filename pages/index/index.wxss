@@ -1,4 +1,9 @@
 /* pages/index/index.wxss */
+@import "../../views/home/home.wxss";
+@import "../../views/sort/sort.wxss";
+@import "../../views/cart/cart.wxss";
+@import "../../views/mine/mine.wxss";
+
 .toolbar {
     display: flex;
     height: 100rpx;

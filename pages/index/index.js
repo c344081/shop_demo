@@ -37,7 +37,7 @@ Page({
         view: 'mine'
     }],
     currentView: 'home',
-    currentData: null
+    currentData: {}
   },
 
   changeTab: function(e) {

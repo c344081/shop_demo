@@ -1,1 +1,2 @@
 /* views/home/home.wxss */
+@import "../modules/modules.wxss";

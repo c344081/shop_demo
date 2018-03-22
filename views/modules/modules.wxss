@@ -1,1 +1,33 @@
 /* views/modules/modules.wxss */
+.modules {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 100rpx;
+}
+
+
+/**entry*/
+.modules .entry {
+    display: flex;
+    width: 100%;
+}
+.modules .entry view {
+    padding: 10rpx;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24rpx;
+    color: #888;
+}
+.modules .entry view image {
+    height: 80rpx;
+    width: 120rpx;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10rpx;
+}
+
+.modules .module-3 image,
+.modules .module-3 navigator {
+    width: 100%;
+    height: 100%;
+}

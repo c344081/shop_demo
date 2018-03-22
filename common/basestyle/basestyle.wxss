@@ -21,3 +21,48 @@
 .base-style .icon.bar.cart.current { background-position: -200rpx -100rpx; }
 .base-style .icon.bar.mine { background-position: -300rpx 0; }
 .base-style .icon.bar.mine.current { background-position: -300rpx -100rpx; }
+
+/**轮播图*/
+.slider {
+    height: 300rpx;
+    position: relative;
+    background-color: #efefef;
+}
+.slider swiper {
+    height: 100%;
+}
+.slider swiper navigator,
+.slider swiper image {
+    width: 100%;
+    height: 100%;
+}
+.slider .pagination {
+    position: absolute;
+    bottom: 10rpx;
+    width: 100%;
+    height: 20rpx;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.slider .pagination view {
+    width: 14rpx;
+    height: 14rpx;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10rpx;
+}
+.slider .pagination view.current {
+    background-color: #f5692e;
+}
+
+.navigator-hover {
+    background-color: transparent;
+}
+
+.flex-col { 
+    display: flex; 
+}
+.flex-col .col {
+    flex-grow: 1;
+}

@@ -1,5 +1,54 @@
 <!--views/modules/modules.wxml-->
 
-<template name="test">
-    测试{{name}}
+<template name="slider">
+    <view class='slider'>
+        <swiper autoplay data-moduleindex='{{index}}' bindchange='modulesSliderChange'>
+            <block wx:for="{{data}}">
+                <swiper-item>
+                    <navigator url="{{item.link}}">
+                        <image src="{{item.img}}"></image>
+                    </navigator>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class='pagination'>
+            <block wx:for="{{data}}">
+                <view wx:if="{{item.selected}}" class="current"></view>
+                <view wx:else></view>
+            </block>
+        </view>
+    </view>
 </template>
+
+<template name="entry">
+    <view class='entry'>
+        <view wx:for="{{data}}">
+            <navigator url="{{item.link}}">
+                <image src="{{item.img}}"></image>
+                {{item.text}}
+            </navigator>
+        </view>
+    </view>
+</template>
+
+<template name="module-1">
+    module-1
+</template>
+
+<template name="module-2">
+    module-2
+</template>
+
+
+<!-- 并排图片-->
+<template name="module-3">
+    <view class="module-3 flex-col" style="height: {{data[0].height*(750/data.length)/data[0].width}}rpx;">
+        <view class='col' wx:for="{{data}}">
+            <navigator url="{{item.link}}" wx:if="{{item.link}}">
+                <image src="{{item.img}}" style="width: {{750/data.length}}rpx;height: {{item.height*(750/data.length)/item.width}}rpx"></image>
+            </navigator>
+            <image wx:else src="{{item.img}}" style="width: {{750/data.length}}rpx;height: {{item.height*(750/data.length)/item.width}}rpx"></image>
+        </view>
+    </view>
+</template>
+

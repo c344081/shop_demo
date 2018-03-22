@@ -2,5 +2,9 @@
 <import src="../modules/modules.wxml"/>
 
 <template name="home">
-    <template is="test" data="{{name}}"></template>
+    <view class='view-home modules'>
+        <block wx:for="{{modules}}">
+            <template is="{{item.type}}" data="{{...item, index}}"></template>
+        </block>
+    </view>
 </template>
