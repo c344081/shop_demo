@@ -1,5 +1,8 @@
 // views/modules/modules.js
-var handle = {
+var serviceCart = require('../../service/cart/cart.js'),
+    handle;
+
+handle = {
     events: {
         modulesSliderChange: function(e) {
             var currentTarget = e.currentTarget,
@@ -13,7 +16,13 @@ var handle = {
             this.setData(this.data)
         },
         modulesAddCart: function(e) {
-            console.log(e)
+            var dataset = e.currentTarget.dataset,
+                self = this;
+            serviceCart.add(dataset.skuId, dataset.storeId, 1, function(data) {
+                self.setData({
+                    'cart.num': self.data.cart.num + 1
+                })
+            })
         }
     }
 }

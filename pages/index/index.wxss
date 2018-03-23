@@ -14,7 +14,6 @@
     border-top: solid 1rpx #eee;
     box-sizing: border-box;
 }
-
 .toolbar .tab {
     flex-grow: 1;
     text-align: center;
@@ -22,13 +21,25 @@
     color: #888;
     position: relative;
 }
-
 .toolbar .tab .icon {
     display: block; 
     margin: 0 auto;
     margin-top: 10rpx;
 }
-
 .toolbar .tab.current {
     color: #f5692e;
+}
+.toolbar .tab .num {
+    background-color: #eb2243;
+    color: #fff;
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36rpx;
+    font-size: 20rpx;
+    position: absolute;
+    left: 50%;
+    margin-left: 10rpx;
+    top: 5rpx;
 }

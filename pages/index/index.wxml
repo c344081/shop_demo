@@ -14,6 +14,7 @@
 <view class='base-style toolbar'>
     <view wx:for="{{ tabs }}" bindtap='changeTab' data-view="{{ item.view }}" class="tab {{ item.view == currentView ? 'current' : '' }}">
         <view class="icon bar {{ item.className }} {{ item.view == currentView ? 'current' : '' }}"></view>
+        <view class='num' wx:if="{{item.className == 'cart'}}">{{cart.num}}</view>
         {{item.text}}
     </view>
 </view>

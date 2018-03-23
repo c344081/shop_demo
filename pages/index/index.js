@@ -4,6 +4,7 @@ var home = require('../../views/home/home.js'),
     cart = require('../../views/cart/cart.js'),
     mine = require('../../views/mine/mine.js'),
     viewHandles,
+    serviceCart = require('../../service/cart/cart.js'),
     _fn;
 
 viewHandles = {
@@ -37,7 +38,10 @@ Page({
         view: 'mine'
     }],
     currentView: 'home',
-    currentData: {}
+    currentData: {},
+    cart: {
+        num: 0
+    }
   },
 
   changeTab: function(e) {
@@ -70,7 +74,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    // 每次显示时刷新购物车
+    var self = this;
+    serviceCart.get(function(res) {
+        self.setData({
+            'cart.num': res.data.num
+        })
+    })
   },
 
   /**

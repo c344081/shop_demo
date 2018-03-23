@@ -1,66 +1,37 @@
 // pages/details/details.js
+var data = require("data.js"),
+    serviceCart = require('../../service/cart/cart.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-  
+  data: data,
+  bannerChange: function(e) {
+    var banner = this.data.banner
+    for (i = 0;d = banner[i];++i) {
+        d.selected = e.detail.current == i
+    }
+    this.setData(this.data)
+  },
+  addCart: function(e) {
+    var dataset = e.currentTarget.dataset,
+        self = this;
+    serviceCart.add(dataset.storeId, dataset.skuId, 1, function(res) {
+        self.setData({
+            cartNum: res.data.num
+        })
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  onLoad: function() {
+      var self = this
+      this.setData(data)
+      serviceCart.get(function(response) {
+        self.setData({
+            cartNum: response.data.num
+        })
+      })
   }
 })
