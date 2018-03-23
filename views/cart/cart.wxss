@@ -1,1 +1,73 @@
 /* views/cart/cart.wxss */
+.view-cart {
+    background-color: #f6f6f6;
+}
+
+.view-cart icon.arrow { 
+    position: absolute; 
+    right: 20rpx; 
+    line-height: 0; 
+    top: 50%; 
+    margin-top: -14rpx; 
+}
+.view-cart icon.arrow:after {
+    content: " ";
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 20rpx;
+    width: 20rpx;
+    border-width: 4rpx 4rpx 0 0;
+    border-color: #c8cccd;
+    border-style: solid;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.view-cart .address {
+    color: #404040;
+    padding: 20rpx 50rpx 20rpx 20rpx;
+    position: relative;
+    background: url(http://static.dmall.com/kayak-project/cart/dist/cart/common/image/shoppingline.png) repeat-x 0 0 #fff;
+    background-size: auto 4rpx;
+}
+.view-cart .address .user {
+    font-size: 32rpx;
+    display: block;
+}
+.view-cart .address .location {
+    margin-top: 10rpx;
+    font-size: 24rpx;
+    display: block;
+    color: gray;
+}
+
+.view-cart .list {
+    padding-bottom: 80rpx;
+}
+.view-cart .list .shop {
+    margin: 20rpx 0;
+    background-color: #fff;
+    border: solid 1px #eee;
+    border-width: 1px 0;
+}
+.view-cart .shop .title {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #eee;
+    height: 70rpx;
+    line-height: 70rpx;
+    padding-left: 10rpx;
+    font-size: 28rpx;
+    color: gray;
+}
+.view-cart .shop .title .checkbox {
+    margin-right: 10rpx;
+}
+.view-cart .shop .title image {
+    display: inline-block;
+    width: 50rpx;
+    height: 50rpx;
+    border: solid 1px #eee;
+    margin-right: 10rpx;
+}

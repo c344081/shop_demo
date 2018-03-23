@@ -11,6 +11,7 @@ handle = {
         console.log('显示首页')
         _fn.init(callerPage)
         callerPage.setData({
+            currentView: 'home',
             currentData: data.data
         })
     }

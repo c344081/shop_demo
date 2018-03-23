@@ -37,8 +37,8 @@ Page({
         className: 'mine',
         view: 'mine'
     }],
-    currentView: 'home',
-    currentData: {},
+    currentView: '',
+    currentData: home,
     cart: {
         num: 0
     }
@@ -67,7 +67,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    _fn.selectView.call(this, 'home')
+    _fn.selectView.call(this, 'cart')
   },
 
   /**

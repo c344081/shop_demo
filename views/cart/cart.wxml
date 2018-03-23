@@ -1,4 +1,19 @@
 <!--views/cart/cart.wxml-->
 <template name="cart">
-    购物车
+    <view class='view-cart'>
+        <view class='address'>
+            <text class='user'>xxxx 2221112</text>
+            <text class='location'>送至: 湖北省武汉市xxxx楼</text>
+            <icon class='arrow'/>
+        </view>
+        <view class='list'>
+            <view class='shop' data-shop-index='{{index}}' wx:for="{{shops}}">
+                <view class='title'>
+                    <icon data-event-type='selectAll' class="icon checkbox {{item.selected ? 'checked' : ''}}"/>
+                    <image src='{{item.shopImg}}'></image>
+                    <span>{{item.name}}</span>
+                </view>
+            </view>
+        </view>
+    </view>
 </template>

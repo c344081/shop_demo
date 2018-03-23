@@ -24,6 +24,8 @@
 
 .base-style .icon.add-cart { background-position: -300rpx -300rpx; }
 .base-style .icon.cart { background-position: -215rpx -510rpx; }
+.base-style .icon.checkbox { background-position :-500rpx -300rpx;}
+.base-style .icon.checkbox.checked { background-position : -400rpx -300rpx; }
 
 /**轮播图*/
 .slider {
