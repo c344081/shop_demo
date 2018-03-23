@@ -1,0 +1,2 @@
+/* pages/active/active.wxss */
+@import "../../views/modules/modules.wxss";

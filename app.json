@@ -1,11 +1,13 @@
 {
     "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/active/active",
+        "pages/details/details"
     ],
     "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
+        "backgroundTextStyle": "bold",
+        "navigationBarBackgroundColor": "#000",
         "navigationBarTitleText": "商城Demo",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "#fff"
     }
 }
