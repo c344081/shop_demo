@@ -71,3 +71,71 @@
     border: solid 1px #eee;
     margin-right: 10rpx;
 }
+
+.view-cart .shop .items {
+    overflow: hidden;
+}
+.view-cart .shop .items .item {
+    display: flex;
+    align-items: center;
+    height: 120rpx;
+}
+.view-cart .shop .items .checkbox {
+    margin-left: 10rpx;
+}
+.view-cart .shop .items .cont {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 10rpx;
+    font-size: 28rpx;
+    color : #404040;
+    border-bottom: solid 1px #eee;
+}
+.view-cart .shop .items .cont .price {
+    font-weight: bold;
+    margin-top: 10rpx;
+}
+.view-cart .shop .items .cont .act {
+    display: flex;
+    position: absolute;
+    right: 20rpx;
+}
+.view-cart .shop .items .cont .act view {
+    width: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.view-cart .shop .items .total {
+    position: relative;
+    padding: 20rpx;
+    padding-right: 200rpx;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+.view-cart .shop .total .price {
+    font-size: 32rpx;
+    color: #f5692e;
+}
+.view-cart .shop .total .info {
+    font-size: 24rpx;
+    color: gray;
+    margin-top: 10rpx;
+}
+.view-cart .shop .total .buy {
+    display: inline-block;
+    position: absolute;
+    right: 20rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 28rpx;
+    padding: 0 40rpx;
+    border-radius: 8rpx;
+    background-color: #f5692e;
+    color: #fff;
+    top: 50%;
+    margin-top: -35rpx;
+}

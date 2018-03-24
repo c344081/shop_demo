@@ -7,11 +7,34 @@
             <icon class='arrow'/>
         </view>
         <view class='list'>
-            <view class='shop' data-shop-index='{{index}}' wx:for="{{shops}}">
+            <view class='shop' bindtap='cartClickProxy' data-shop-index='{{index}}' wx:for="{{shops}}">
                 <view class='title'>
                     <icon data-event-type='selectAll' class="icon checkbox {{item.selected ? 'checked' : ''}}"/>
                     <image src='{{item.shopImg}}'></image>
                     <span>{{item.name}}</span>
+                </view>
+
+                <view class='items'>
+                    <view class='item' wx:for="{{item.items}}" wx:for-item="p" wx:for-index="pIndex" wx:key="index">
+                        <icon data-event-type='select' data-p-index='{{pIndex}}' class="icon checkbox {{p.selected ? 'checked' : ''}}"/>
+                        <view class='cont'>
+                            <view class='info'>
+                                <view>{{p.name}}</view>
+                                <view class='price'>{{p.price}}</view>
+                            </view>
+                            <view class='act'>
+                                <icon class='icon minus' data-p-index='{{pIndex}}' data-event-type='minus'></icon>
+                                <view>{{p.num}}</view>
+                                <icon class='icon plus' data-p-index='{{pIndex}}' data-event-type='plus'></icon>
+                            </view>
+                        </view>
+                    </view>
+
+                    <view class='total'>
+                        <view class='price'>{{item.totalInfo}}</view>
+                        <view class='info'>{{item.subInfo}}</view>
+                        <view class='buy' data-event-type='buy'>选好了</view>
+                    </view>
                 </view>
             </view>
         </view>

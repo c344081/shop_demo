@@ -1,0 +1,106 @@
+/* pages/checkout/checkout.wxss */
+.checkout { background-color: #f9f9f9; font-size: 28rpx; padding-bottom: 80rpx;}
+.checkout .address {
+    position: relative;
+    background: url(http://static.dmall.com/kayak-project/cart/dist/cart/common/image/shoppingline.png) repeat-x 0 0 #fff;
+    background-size: auto 4rpx;
+    border-bottom: solid 1px #eee;
+    color: #404040;
+    padding: 20rpx 50rpx 20rpx 20rpx;
+}
+.checkout .address .user {
+    display: block;
+    font-size: 32rpx;
+}
+.checkout .address .location {
+    display: block;
+    color: gray;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}
+
+.checkout .module {
+    margin-top: 20rpx;
+    background-color: #fff;
+    border-top: solid 1px #eee;
+}
+.checkout .module .row {
+    border-bottom: solid 1px #eee;
+    padding: 10rpx 20rpx;
+    line-height: 60rpx;
+    height: 60rpx;
+    position: relative;
+}
+.checkout .module .sub-info {
+    float: right;
+}
+.checkout .payment .icon {
+    float: left;
+    margin-right: 10rpx;
+}
+.checkout .payment .icon.checkbox {
+    float: right;
+    margin-right: 0;
+}
+.checkout .remarks input {
+    float: right;
+    width: 630rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.checkout .cont {
+    padding: 10rpx 0;
+    border-bottom: solid 1px #eee;
+}
+.checkout .cont .sub-row {
+    color: gray;
+    font-size: 24rpx;
+    padding: 10rpx 20rpx;
+}
+.checkout .cont .sub-row view {
+    float: right;
+}
+.checkout .orderinfo .total view {
+    float: right;
+    color: #f5692e;
+}
+
+
+.checkout .toolbar {
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+    border-top: solid 1px #eee;
+    color: #f5692e;
+    position: fixed;
+    bottom: 0;
+}
+.checkout .toolbar .wrapper {
+    position: relative;
+    height: 100%;
+    padding-left: 20rpx;
+    display: flex;
+    align-items: center;
+}
+.checkout .toolbar .wrapper view {
+    display: inline-block;
+}
+.checkout .toolbar .sup {
+    position: relative;
+    font-size: 24rpx;
+    top: -12rpx;
+    margin: 0 10rpx;
+}
+.checkout .toolbar .strong {
+    font-weight: bold;
+    font-size: 36rpx;
+}
+.checkout .toolbar .button {
+    background-color: #f5692e;
+    color: #fff;
+    line-height: 80rpx;
+    padding: 0 40rpx;
+    position: absolute;
+    right: 0;
+}

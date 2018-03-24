@@ -2,7 +2,9 @@
     "pages": [
         "pages/index/index",
         "pages/active/active",
-        "pages/details/details"
+        "pages/details/details",
+        "pages/checkout/checkout",
+        "pages/cashier/cashier"
     ],
     "window": {
         "backgroundTextStyle": "bold",
