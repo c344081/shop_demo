@@ -4,7 +4,8 @@
         "pages/active/active",
         "pages/details/details",
         "pages/checkout/checkout",
-        "pages/cashier/cashier"
+        "pages/cashier/cashier",
+        "pages/status/status"
     ],
     "window": {
         "backgroundTextStyle": "bold",

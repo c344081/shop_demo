@@ -9,6 +9,13 @@ Page({
   data: {},
 
   onShow: function() {
+    if (this.orderId) {
+        wx.redirectTo({
+            url: '../status/status?orderId=' + this.orderId
+        })
+        this.orderId = '';
+        return;
+    }
     this.data = res;
     this.setData(this.data)
   },
@@ -59,6 +66,19 @@ Page({
           }
       })
   },
+
+  changePayment: function(e) {
+    var paymentIndex = e.currentTarget.dataset.paymentIndex,
+        payment = this.data.payment,
+        i, p;
+    for (i = 0; p = payment[i]; ++i) {
+        p.selected = paymentIndex == i ? true : false;
+    }
+    this.setData({
+        payment: payment
+    })
+  },
+
   submit: function(e) {
     // 请求后台获取订单号
     var orderId = '123'

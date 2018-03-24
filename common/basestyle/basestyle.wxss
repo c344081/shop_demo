@@ -30,6 +30,8 @@
 .base-style .icon.minus { background-position : 0 -800rpx; }
 .base-style .icon.onlinepayment { background-position : -400rpx -200rpx; }
 .base-style .icon.offlinepayment { background-position : -100rpx -940rpx }
+.base-style .icon.weixinpay { background-position: -400rpx -200rpx; }
+.base-style .icon.alipay { background-position: -500rpx -880rpx; }
 
 /**轮播图*/
 .slider {
