@@ -33,6 +33,16 @@
 .base-style .icon.weixinpay { background-position: -400rpx -200rpx; }
 .base-style .icon.alipay { background-position: -500rpx -880rpx; }
 
+.base-style .icon.vip { background-position: -576rpx -960rpx; width: 116rpx; height: 30rpx; }
+.base-style .icon.orders { background-position: -200rpx -100rpx; }
+.base-style .icon.group-buying { background-position: -500rpx -100rpx; }
+.base-style .icon.scan { background-position: -600rpx -102rpx; }
+.base-style .icon.member { background-position: -400rpx -940rpx; }
+.base-style .icon.location { background-position: -300rpx -100rpx; }
+.base-style .icon.help { background-position: 0 -200rpx; }
+.base-style .icon.download { background-position: -600rpx -800rpx; }
+.base-style .icon.service { background-position: -100rpx -200rpx; }
+
 /**轮播图*/
 .slider {
     height: 300rpx;
